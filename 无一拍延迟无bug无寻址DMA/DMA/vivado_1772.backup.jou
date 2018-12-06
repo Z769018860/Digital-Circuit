@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jan  9 10:15:46 2018
+# Process ID: 1772
+# Current directory: E:/Xilinx_Vivado/project/DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8016 E:\Xilinx_Vivado\project\DMA\DMA.xpr
+# Log file: E:/Xilinx_Vivado/project/DMA/vivado.log
+# Journal file: E:/Xilinx_Vivado/project/DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Xilinx_Vivado/project/DMA/DMA.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config E:/Xilinx_Vivado/project/DMA/DMA_test_behav.wcfg
+source DMA_test.tcl
+run 50000000 ns
+run 50000000 ns
+save_wave_config {E:/Xilinx_Vivado/project/DMA/DMA_test_behav.wcfg}
+close_sim

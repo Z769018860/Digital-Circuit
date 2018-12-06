@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Jan 11 20:53:43 2018
+# Process ID: 4944
+# Current directory: D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23920 D:\study\daer\shuzidianlu\期末作业\DMA(存档+无寻址)\DMA\DMA.xpr
+# Log file: D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/vivado.log
+# Journal file: D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/study/daer/shuzidianlu/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 798.602 ; gain = 38.176
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DMA_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DMA_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.srcs/sources_1/new/DMA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.srcs/sim_1/new/DMA_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/study/daer/shuzidianlu/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto bfa191f2789d4461bf84a74eaad313a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DMA_test_behav xil_defaultlib.DMA_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DMA
+Compiling module xil_defaultlib.DMA_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DMA_test_behav
+此时不应有 /DMA/DMA.sim/sim_1/behav/xsim.dir/DMA_test_behav/webtalk/xsim_webtalk.tcl。
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DMA_test_behav -key {Behavioral:sim_1:Functional:DMA_test} -tclbatch {DMA_test.tcl} -view {D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA_test_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+open_wave_config D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA_test_behav.wcfg
+source DMA_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DMA_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 829.523 ; gain = 9.047
+run 1000 ns
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+run 1000 ns
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+run 1000 ns
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=1, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=1, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in= 86, dma_to_cpu_enable=0, dma_to_cpu_valid=1, dma_to_mem_enable=1, dma_to_mem_valid=0
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 3250 ns  Iteration: 10000
+run 1000 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 1000 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DMA_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DMA_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.srcs/sources_1/new/DMA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.srcs/sim_1/new/DMA_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/study/daer/shuzidianlu/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto bfa191f2789d4461bf84a74eaad313a7 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DMA_test_behav xil_defaultlib.DMA_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DMA
+Compiling module xil_defaultlib.DMA_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DMA_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 894.609 ; gain = 0.000
+run 1000 ns
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+run 1000 ns
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0
+run 1000 ns
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=1, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=1, dma_to_mem_enable=1, dma_to_mem_valid=0
+mem_data_in= 0, cpu_data_in= 86, dma_to_cpu_enable=0, dma_to_cpu_valid=1, dma_to_mem_enable=1, dma_to_mem_valid=0
+FATAL_ERROR: Iteration limit 10000 is reached. Possible zero delay oscillation detected where simulation time can not advance. Please check your source code. Note that the iteration limit can be changed using switch -maxdeltaid.
+Time: 3250 ns  Iteration: 10000
+run 1000 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 1000 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 1000 ns
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 11 20:56:30 2018...

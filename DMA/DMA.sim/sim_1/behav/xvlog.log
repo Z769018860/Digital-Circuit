@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/school/Maths/数字电路/DMA/DMA.srcs/sources_1/new/DMA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/school/Maths/数字电路/DMA/DMA.srcs/sim_1/new/DMA_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMA_test
+INFO: [VRFC 10-2458] undeclared symbol adress_valid, assumed default net type wire [E:/school/Maths/数字电路/DMA/DMA.srcs/sim_1/new/DMA_test.v:76]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/school/Maths/数字电路/DMA/DMA.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

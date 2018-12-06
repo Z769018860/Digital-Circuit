@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jan  1 10:43:57 2018
+# Process ID: 14072
+# Current directory: D:/study/daer/shuzidianlu/DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17468 D:\study\daer\shuzidianlu\DMA\DMA.xpr
+# Log file: D:/study/daer/shuzidianlu/DMA/vivado.log
+# Journal file: D:/study/daer/shuzidianlu/DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/study/daer/shuzidianlu/DMA/DMA.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/study/daer/shuzidianlu/DMA/DMA_test_behav.wcfg
+source DMA_test.tcl
+add_wave {{/DMA_test/u_DMA}} 
+relaunch_sim
+run 100000 ns
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 100000 ns
+relaunch_sim
+run 100000 ns
+relaunch_sim
+run 100000 ns
+relaunch_sim
+run 100000 ns
+relaunch_sim
+run 100000 ns
+relaunch_sim
+run 100000 ns
+relaunch_sim
+run 100000 ns
+relaunch_sim
+run 100000 ns
+reset_run synth_1
+save_wave_config {D:/study/daer/shuzidianlu/DMA/DMA_test_behav.wcfg}
+close_sim

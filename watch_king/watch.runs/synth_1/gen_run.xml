@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1513514713">
+  <File Type="PA-TCL" Name="watch.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="watch_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="watch.vds"/>
+  <File Type="RDS-UTIL" Name="watch_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="watch_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="watch.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="watch_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="watch_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/6_watch/watch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../loongson/fpga/a7/Digital_Logic_Lab_fpga_a7_20170217/source_code/6_watch/watch.v"/>
+        <Attr Name="ImportTime" Val="1487299146"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="watch"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/6_watch/watch.v"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/6_watch/watch.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../loongson/fpga/a7/Digital_Logic_Lab_fpga_a7_20170217/source_code/6_watch/watch.xdc"/>
+        <Attr Name="ImportTime" Val="1487299146"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2012"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

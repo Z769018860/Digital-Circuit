@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Jan 12 19:58:03 2018
+# Process ID: 24020
+# Current directory: D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13728 D:\study\daer\shuzidianlu\期末作业\DMA(存档+无寻址)\DMA\DMA.xpr
+# Log file: D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/vivado.log
+# Journal file: D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/study/daer/shuzidianlu/期末作业/DMA(存档+无寻址)/DMA/DMA_test_behav.wcfg
+source DMA_test.tcl
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+add_wave {{/DMA_test/u_DMA}} 
+relaunch_sim
+relaunch_sim
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+close_sim

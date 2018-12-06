@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Jan 14 01:43:22 2018
+# Process ID: 12900
+# Current directory: E:/school/Maths/数字电路/无一拍延迟无bug无寻址DMA/DMA/DMA.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source E:/school/Maths/数字电路/无一拍延迟无bug无寻址DMA/DMA/DMA.sim/sim_1/behav/xsim.dir/DMA_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/school/Maths/数字电路/无一拍延迟无bug无寻址DMA/DMA/DMA.sim/sim_1/behav/webtalk.log
+# Journal file: E:/school/Maths/数字电路/无一拍延迟无bug无寻址DMA/DMA/DMA.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source E:/school/Maths/数字电路/无一拍延迟无bug无寻址DMA/DMA/DMA.sim/sim_1/behav/xsim.dir/DMA_test_behav/webtalk/xsim_webtalk.tcl -notrace

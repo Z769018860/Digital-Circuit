@@ -1,0 +1,12 @@
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=x, address_enable=x, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=1, address_enable=1, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=0, address_enable=1, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=1, address_enable=0, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=1, address_enable=1, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=1, address_enable=1, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=1, address_enable=1, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=0, address_enable=0, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=0, address_enable=1, length= 144
+mem_data_in= 0, cpu_data_in=  0, dma_to_cpu_enable=0, dma_to_cpu_valid=0, dma_to_mem_enable=1, dma_to_mem_valid=0, address_valid=1, address_enable=1, length= 144

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Dec 17 20:45:15 2017
+# Process ID: 21752
+# Current directory: E:/school/Maths/数字电路/watch_king/watch.runs/synth_1
+# Command line: vivado.exe -log watch.vds -mode batch -messageDb vivado.pb -source watch.tcl
+# Log file: E:/school/Maths/数字电路/watch_king/watch.runs/synth_1/watch.vds
+# Journal file: E:/school/Maths/数字电路/watch_king/watch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source watch.tcl
